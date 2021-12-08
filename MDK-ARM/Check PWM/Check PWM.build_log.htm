@@ -1,0 +1,89 @@
+<html>
+<body>
+<pre>
+<h1>�Vision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: �Vision V5.31.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Aleksandr Mikhalev, BMSTU, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.31.0.0
+Toolchain Path:  F:\fs\keil\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.31.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+F:\fs_work\IMD\PWM\Check PWM\MDK-ARM\Check PWM.uvprojx
+Project File Date:  11/28/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'F:\fs\keil\ARM\ARMCC\Bin'
+Build target 'Check PWM'
+compiling IMD.c...
+../Core/Inc/IMD.h(7): warning:  #1-D: last line of file ends without a newline
+  uint32_t GETPCLK1TIM(void);
+..\Core\Src\IMD.c(19): warning:  #68-D: integer conversion resulted in a change of sign
+      uint32_t max = -1;
+..\Core\Src\IMD.c(30): warning:  #223-D: function "abs" declared implicitly
+  		if (abs(left_sum - right_sum) >= max)
+..\Core\Src\IMD.c(40): warning:  #223-D: function "abs" declared implicitly
+  	if (abs(left_sum - right_sum) <= max)
+..\Core\Src\IMD.c(50): warning:  #223-D: function "abs" declared implicitly
+  	if (abs(left_sum - right_sum) == max)
+..\Core\Src\IMD.c(20): warning:  #177-D: variable "min"  was declared but never referenced
+      uint32_t min = arr[0];
+..\Core\Src\IMD.c(116): warning:  #223-D: function "sprintf" declared implicitly
+  			length=sprintf (IMD_Condititon, "Fault detected on the earth connection");
+..\Core\Src\IMD.c(124): warning:  #223-D: function "sprintf" declared implicitly
+  			length=sprintf (IMD_Condititon, "Devise error");
+..\Core\Src\IMD.c(132): warning:  #223-D: function "sprintf" declared implicitly
+  			length=sprintf (IMD_Condititon, "Speed start measurement: good");
+..\Core\Src\IMD.c(137): warning:  #223-D: function "sprintf" declared implicitly
+  			length=sprintf (IMD_Condititon, "Speed start measurement: bad");
+..\Core\Src\IMD.c(146): warning:  #223-D: function "sprintf" declared implicitly
+  			length=sprintf (IMD_Condititon, "Undervoltage condition: <350V");
+..\Core\Src\IMD.c(151): warning:  #223-D: function "sprintf" declared implicitly
+  		length=sprintf (IMD_Condititon, "Insulation measurement:");
+..\Core\Src\IMD.c(167): warning:  #223-D: function "sprintf" declared implicitly
+  		length=sprintf (IMD_Condititon, "WTF");
+..\Core\Src\IMD.c(99): warning:  #550-D: variable "length"  was set but never used
+  	int length=0;//длина сообщения
+..\Core\Src\IMD.c: 14 warnings, 0 errors
+linking...
+Program Size: Code=13250 RO-data=482 RW-data=64 ZI-data=2392  
+FromELF: creating hex file...
+"Check PWM\Check PWM.axf" - 0 Error(s), 14 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.7.0.pack
+                ARM.CMSIS.5.7.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.4.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F3xx_DFP.2.1.0.pack
+                Keil.STM32F3xx_DFP.2.1.0
+                STMicroelectronics STM32F3 Series Device Support and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Check_PWM
+  C:\Users\mikha\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+  C:\Users\mikha\AppData\Local\Arm\Packs\Keil\STM32F3xx_DFP\2.1.0\Drivers\CMSIS\Device\ST\STM32F3xx\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.4.0
+Build Time Elapsed:  00:00:05
+</pre>
+</body>
+</html>
