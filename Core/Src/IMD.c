@@ -9,7 +9,7 @@ double DutyCycleIMD;
 double InsulationResistance=0;// сопротивление изоляции в МОм
 uint32_t PeriodMedian;
 uint32_t DutyCycleMedian;
-double huila;
+//double huila;
 uint32_t TIM_FOR_IMD_PWM_CLOCK=0;
 char IMD_Condititon[100];
 uint32_t MedianArray(uint32_t *arr, size_t size) {
@@ -107,7 +107,7 @@ void InsulationConditionFromIMD (uint32_t* BuffPeriod, uint32_t* BuffDutyCycle)
 																																=1*TIM1_CLOCK%(htim2.Init.Prescaler+1)/period), чтобы получить частоту в Гц  
 	frequency=((double)TIM_FOR_IMD_PWM_CLOCK/(double)(htim2.Init.Prescaler+1))/(double)PeriodMedian;
 	DutyCycleIMD=(double)DutyCycleMedian/(double)PeriodMedian;
-	 huila=fabs(frequency-50);
+	 //huila=fabs(frequency-50);
 	if (fabs(frequency-50)<=eps)
 	{
 		if (DutyCycleIMD<=0.55 && DutyCycleIMD>=0.45)
